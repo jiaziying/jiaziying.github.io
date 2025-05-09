@@ -32,6 +32,12 @@ section {
 
 ul li {
     margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul li .text-muted {
+    color: #6c757d;
+    font-style: italic;
 }
 
 footer {
