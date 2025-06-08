@@ -23,7 +23,8 @@
             <a class="nav-link" href="#publications">Publications</a>
             <a class="nav-link" href="#education">Education</a>
             <a class="nav-link" href="#experience">Experience</a>
-            <a class="nav-link" href="#reviewer-experience">Reviewer Experience</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#awards">Awards</a>
             <a class="nav-link" href="#contact">Contact</a>
         </nav>
 
@@ -36,24 +37,30 @@
             <h2>Research Interests</h2>
             <ul>
                 <li>Topic 1: Reinforcement Learning</li>
-                <li>Topic 2: Robust Reinforcement Learning</li>
-                <li>Topic 3: Last-Mile Delivery Problem</li>
+                <li>Topic 2: Robust Optimization</li>
+                <li>Topic 3: Last-Mile Delivery</li>
             </ul>
         </section>
 
         <section id="publications" class="mb-5">
             <h2>Publications</h2>
-            <ul id="publications-list">
-                <li>Loading publications...</li>
-            </ul>
+            <div class="publication-entry">
+                <div class="publication-tag">[ICML'25]</div>
+                <div class="publication-details">
+                    <div>Pessimism Principle Can Be Effective: Towards a Framework for Zero-Shot Transfer Reinforcement Learning</div>
+                    <div>Chi Zhang, <strong>Ziying Jia</strong>, George K. Atia, Sihong He, Yue Wang</div>
+                    <div class="text-muted fst-italic">arXiv preprint arXiv:2505.18447</div>
+                    <div><a href="https://arxiv.org/pdf/2505.18447" target="_blank">[PDF]</a></div>
+                </div>
+            </div>
         </section>
 
         <section id="education" class="mb-5">
             <h2>Education</h2>
             <ul>
-                <li>PhD in Computer Science, University of Texas at Arlington - 2029</li>
-                <li>Master's in Electrical and Computer Engineering, Carnegie Mellon University - 2024</li>
-                <li>Bachelor's in Electronic and Communication Engineering, City University of Hong Kong - 2022</li>
+                <li>Ph.D. in Computer Science, University of Texas at Arlington - 2029</li>
+                <li>M.S. in Electrical and Computer Engineering, Carnegie Mellon University - 2024</li>
+                <li>B.E. in Electronic and Communication Engineering, City University of Hong Kong - 2022</li>
             </ul>
         </section>
 
@@ -64,16 +71,27 @@
                 <li><strong>Teaching Assistant</strong> for CSE5360 Artificial Intelligence I - University of Texas at Arlington <span class="text-muted">(2025 Spring)</span></li>
                 <li><strong>Teaching Assistant</strong> for CSE4308 Artificial Intelligence - University of Texas at Arlington <span class="text-muted">(2024 Fall)</span></li>
                 <li><strong>Research Assistant</strong> - City University of Hong Kong <span class="text-muted">(2021 - 2022)</span></li>
-                <li><strong>Electrical Engineer Internship</strong> - Smart Mobility Company Limited <span class="text-muted">(2021 - 2022)</span></li>
+                <li><strong>Electrical Engineer Intern</strong> - Smart Mobility Company Limited <span class="text-muted">(2021 - 2022)</span></li>
             </ul>
         </section>
 
-        <section id="reviewer-experience" class="mb-5">
-            <h2>Reviewer Experience</h2>
+        <section id="services" class="mb-5">
+            <h2>Services</h2>
             <ul>
-                <li><strong>IEEE COINS</strong> <span class="text-muted">(2025)</span></li>
-                <li><strong>IEEE Cloud Summit</strong> <span class="text-muted">(2025)</span></li>
-                <li><strong>PAKDD Workshop Foundational AI for Pervasive Computing</strong> <span class="text-muted">(2025)</span></li>
+                <li>ICML Workshop PRAL <span class="text-muted">(2025)</span></li>
+                <li>IEEE COINS <span class="text-muted">(2025)</span></li>
+                <li>IEEE Cloud Summit <span class="text-muted">(2025)</span></li>
+                <li>PAKDD Workshop Foundational AI for Pervasive Computing <span class="text-muted">(2025)</span></li>
+            </ul>
+        </section>
+
+        <section id="awards" class="mb-5">
+            <h2>Honors and Awards</h2>
+            <ul>
+                <li><strong>TA of the Month</strong> <span class="text-muted">(May 2025)</span></li>
+                <li><strong>HKSAR Government Scholarship</strong> - Talent Development Scholarship <span class="text-muted">(2021/22)</span></li>
+                <li><strong>HKSAR Government Scholarship</strong> - Reaching Out Award <span class="text-muted">(2019/20)</span></li>
+                <li><strong>CityU Mainland Student Scholarship</strong> - Full Tuition Scholarship <span class="text-muted">(2018 - 2022)</span></li>
             </ul>
         </section>
 
@@ -81,7 +99,7 @@
             <h2>Contact</h2>
             <p><i class="fas fa-envelope"></i> Email: zxj3060@mavs.uta.edu</p>
             <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/ziyingjia/" target="_blank">ziyingjia</a></p>
-            <!-- <p><i class="fab fa-google"></i> Google Scholar: <a href="your-scholar-url">[Your Google Scholar]</a></p> -->
+            <p><i class="fab fa-google"></i> Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=RerPQqIAAAAJ">Ziying Jia</a></p>
             <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/jiaziying/" target="_blank">jiaziying</a></p>
         </section>
 
@@ -101,25 +119,6 @@
                     scrollTop: $($.attr(this, 'href')).offset().top
                 }, 500);
             });
-
-            // Fetch Google Scholar Publications
-            // const scholarID = '[Your Scholar ID]';
-            // $.get(`https://scholar.google.com/citations?user=${scholarID}&hl=en`, function(data) {
-            //     const parser = new DOMParser();
-            //     const doc = parser.parseFromString(data, 'text/html');
-            //     const publications = doc.querySelectorAll('.gsc_a_tr');
-            //     $('#publications-list').empty();
-
-            //     publications.forEach(pub => {
-            //         const title = pub.querySelector('.gsc_a_at').innerText;
-            //         const year = pub.querySelector('.gsc_a_y').innerText;
-            //         const link = pub.querySelector('.gsc_a_at').href;
-
-            //         $('#publications-list').append(
-            //             `<li><strong>${title}</strong> - ${year} <a href="https://scholar.google.com${link}">[PDF]</a></li>`
-            //         );
-            //     });
-            // });
         });
     </script>
 </body>
