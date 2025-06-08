@@ -53,29 +53,3 @@ i {
     margin-right: 8px;
     color: #007bff;
 }
-
-.publication-entry {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
-
-.publication-tag {
-    width: 120px;
-    font-weight: bold;
-    text-align: right;
-    padding-right: 1rem;
-    flex-shrink: 0;
-}
-
-.publication-details {
-    flex-grow: 1;
-    font-size: 1.1em;              /* Match list item size */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Match body font */
-    color: #212529;                /* Bootstrap default text color */
-    line-height: 1.4;              /* Optional: Improve spacing */
-}
-
-.publication-details div {
-    margin-bottom: 0.2rem;
-}
