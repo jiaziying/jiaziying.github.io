@@ -1,0 +1,22 @@
+.wave-learning-bridge{margin:0 0 24px;border:1px solid #386674;border-radius:17px;padding:23px;background:linear-gradient(125deg,#14333e,#122335 75%);color:#edf8fc;min-width:0}
+.wlb-heading h3{font-size:clamp(21px,2vw,25px);line-height:1.3;letter-spacing:-.4px;margin:9px 0 7px}
+.wlb-heading p{font-size:16px;color:#b8d0dc;line-height:1.65;margin:0}
+.wlb-flow{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);align-items:stretch;gap:10px;margin:20px 0 15px}
+.wlb-step{min-width:0;border:1px solid #416070;border-radius:12px;background:#142b3d;color:#e3f0f6;padding:17px 15px;display:flex;flex-direction:column;align-items:flex-start;gap:9px;text-align:left;transition:background .15s,border-color .15s}
+.wlb-step:hover{background:#1d3b4a;border-color:#79bab9}
+.wlb-step.active{background:#1a454b;border-color:#80d9cb;box-shadow:inset 0 3px #80d9cb}
+.wlb-stage{font-size:13px;font-weight:750;letter-spacing:.6px;color:#8be5d6}
+.wlb-step b{font-size:17px;line-height:1.4;font-weight:700}
+.wlb-plus{font-size:19px;line-height:1;color:#92cfc7}
+.wlb-equation,.wlb-step-description{font-size:15px;line-height:1.55;color:#bed4df}
+.wlb-training-mark{font-size:13px;line-height:1.5;color:#8fb9c5;margin-top:auto;padding-top:3px}
+.wlb-field{font-size:18px;color:#c4fff0;line-height:1.6;overflow-wrap:anywhere;font-family:Georgia,serif}
+.wlb-arrow{align-self:center;color:#80c7c8;font-size:24px;text-align:center}
+.wlb-detail{display:flex;align-items:center;justify-content:space-between;gap:23px;padding:17px 19px;background:#0d2131;border:1px solid #315364;border-radius:11px}
+.wlb-detail>div{min-width:0;flex:1}.wlb-detail strong{font-size:16px;line-height:1.5;color:#e3faf6}
+.wlb-detail p{margin:6px 0 0;font-size:16px;line-height:1.7;color:#b9cfdd}
+.wlb-action{flex:none;max-width:230px;border:1px solid #65a89f;color:#c5fff1;background:#17474e;padding:12px 15px;border-radius:9px;font-size:15px;line-height:1.5;font-weight:650;text-align:left}
+.wlb-action:hover{background:#245d61}.wlb-separation{margin:14px 2px 0;font-size:14px!important;line-height:1.7;color:#a4becd}
+@media(max-width:1200px){.wlb-detail{align-items:flex-start;flex-direction:column;gap:13px}.wlb-action{max-width:100%}}
+@media(max-width:650px){.wave-learning-bridge{padding:18px 14px}.wlb-flow{grid-template-columns:1fr;gap:8px;margin-top:16px}.wlb-step{gap:6px;padding:14px}.wlb-arrow{transform:rotate(90deg);font-size:20px;line-height:16px}.wlb-detail{padding:14px}.wlb-separation{font-size:14px!important}.wlb-training-mark{margin:0;padding:0}}
+@media(prefers-reduced-motion:reduce){.wlb-step{transition:none}}

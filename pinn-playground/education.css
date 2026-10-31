@@ -1,0 +1,45 @@
+/* Readable teaching text and fixed, quantitative field annotations. */
+#learn .section-heading p,#explore .section-heading p,#experiment .section-heading p{font-size:16px;line-height:1.7;max-width:900px}
+#learn .learn-principle p,#learn .learn-detail p,#learn .learn-summary p,#learn .learn-concept-check p{font-size:16px;line-height:1.75;color:#b9cedc}
+#learn .learn-principle strong,#learn .learn-summary b{font-size:18px;line-height:1.5}
+#learn .learn-detail h3{font-size:24px;line-height:1.35}
+#learn .learn-figure-title{font-size:18px;line-height:1.5}
+#learn .fig-caption,#learn .sample-explanation,#learn .learn-next,#learn .learn-concept-pair small,#learn .law-list small{font-size:15px;line-height:1.7;color:#b5cbdc}
+#learn .learn-concept-pair b,#learn .law-list b{font-size:16px;line-height:1.5}
+#learn .lesson-tab b{font-size:15px}#learn .lesson-tab small{font-size:12px;line-height:1.4}
+#learn .lesson-tab{min-width:0;min-height:78px}
+#learn .learning-stage-top b{font-size:14px;line-height:1.5}#learn .learning-stage-top span{font-size:12px;line-height:1.5}
+#learn .detail-eyebrow,#learn .small-kicker{font-size:12px;line-height:1.5}
+#learn .learn-next-btn,#learn .training-mode,#learn .sample-pick,#learn .concept-choices button,#learn .inline-link{font-size:14px;line-height:1.5;min-height:44px}
+#learn .general-formula,#learn .residual-bar strong{font-size:20px;line-height:1.8;overflow-wrap:anywhere}
+#learn .loss-formula-grid code{font-size:18px;line-height:1.6;overflow-wrap:anywhere}
+#learn .loss-formula-grid b,#learn .loss-formula-details summary{font-size:14px;line-height:1.5}
+#learn .network-io b,#learn .ad-main b{font-size:23px}#learn .network-io small,#learn .ad-main small,#learn .network-core>small{font-size:13px;line-height:1.5}
+#learn .network-io>span,#learn .ad-main span,#learn .residual-bar span{font-size:12px;line-height:1.5;letter-spacing:.4px}
+#learn .objective-update,#learn .objective-sources b{font-size:16px;line-height:1.6}#learn .objective-output strong{font-size:24px}
+#learn .learn-detail,#learn .learn-figure{min-width:0}
+#experiment .experiment-bridge p,#experiment .limits-title p,#experiment .history-note,#experiment .inspector-intro,#experiment .limits-foot{font-size:15px;line-height:1.75;color:#b2cbdc}
+#experiment .model-experiment-foot p,#experiment .model-link-note{font-size:13px;line-height:1.7}
+#experiment .time-row label,#experiment .heat-head b,#experiment .model-option b{font-size:14px}
+#experiment .heat-panel>small{font-size:12px;line-height:1.6;color:#a4bdcc}
+#experiment .quantitative-field{position:relative;padding:12px 12px 35px 41px;margin:0;min-width:0}
+#experiment .quantitative-field canvas{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:3px;margin:0;min-width:0}
+.field-axes{position:absolute;inset:12px 12px 35px 41px;pointer-events:none;font-size:12px;line-height:1;color:#b4cfdd;font-variant-numeric:tabular-nums}
+.field-y-ticks{position:absolute;top:0;bottom:0;right:calc(100% + 7px);display:flex;flex-direction:column;justify-content:space-between;text-align:right}
+.field-x-ticks{position:absolute;left:0;right:0;top:calc(100% + 7px);display:flex;justify-content:space-between}
+.field-axis-y-name{position:absolute;right:calc(100% + 34px);top:calc(50% - 7px);font-style:italic;font-size:14px;color:#e1f4f5}
+.field-axis-x-name{position:absolute;top:calc(100% + 21px);left:calc(50% - 3px);font-style:italic;font-size:14px;color:#e1f4f5}
+.field-scale{padding:2px 13px 8px 41px;min-width:0}
+.field-scale-title{font-size:12px;line-height:1.5;color:#c5dfe7;margin-bottom:6px}
+.field-colorbar{height:11px;border:1px solid #7ea4b276;border-radius:3px}
+.field-colorbar-wave{background:linear-gradient(to right,rgb(177,111,213) 0%,rgb(23,53,83) 50%,rgb(238,242,165) 100%)}
+.field-colorbar-error{background:linear-gradient(to right,rgb(15,38,62) 0%,rgb(80,152,184) 50%,rgb(243,134,109) 100%)}
+.field-color-ticks{display:flex;justify-content:space-between;color:#aec9d7;font-size:12px;line-height:1.5;font-variant-numeric:tabular-nums;margin-top:3px}
+#experiment .field-observed-range{font-size:12px;color:#adc6d5;line-height:1.6;margin:7px 0 0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.field-scale-explanation{font-size:13px;color:#b2cbd8;line-height:1.7;margin:14px 0 18px;padding:12px 14px;border-left:3px solid #70bfb7;background:#132a3c;border-radius:0 7px 7px 0}
+#experiment .limit-compare-grid .field-scale{padding-left:41px;padding-right:12px}
+#experiment .limit-compare-grid>div>span{font-size:12px;line-height:1.5;display:block}
+#experiment .limit-compare-grid>div>p{font-size:13px;line-height:1.7}
+@media(max-width:1180px){#learn .learn-canvas-layout{grid-template-columns:1fr}#learn .learn-figure{border-right:0;border-bottom:1px solid #30465e}}
+@media(max-width:700px){#learn .lesson-rail{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#learn .general-network-figure{flex-direction:column;align-items:stretch;gap:10px}#learn .network-core{min-height:150px}#learn .flow-chevron{transform:rotate(90deg);text-align:center}#learn .sample-selection{grid-template-columns:repeat(2,minmax(0,1fr))}#learn .learn-concept-pair{grid-template-columns:1fr}#learn .autodiff-flow{flex-direction:column;gap:8px}#learn .ad-arrow{transform:rotate(90deg)}#learn .ad-main{min-height:105px;width:100%}#learn .objective-sources{gap:10px;flex-wrap:wrap}#learn .learning-stage-top{align-items:flex-start;flex-direction:column}#learn .learn-detail h3{font-size:22px}#learn .learn-detail,#learn .learn-figure{padding:20px 16px}#learn .general-formula{font-size:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
